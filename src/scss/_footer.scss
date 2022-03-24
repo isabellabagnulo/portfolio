@@ -1,0 +1,29 @@
+footer{
+    text-align: center;
+    padding: 20px 20px;
+    .dash{
+        display: none;
+    }
+}
+
+.homepage footer{
+    display: none;
+}
+
+@media(min-width: 700px){
+    footer{
+        text-align: left;
+        display: flex;
+        padding: 20px 30px;
+        .dash{
+            display: block;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media(min-width: 1050px){
+    footer{
+        padding: 20px 50px;
+    }
+}

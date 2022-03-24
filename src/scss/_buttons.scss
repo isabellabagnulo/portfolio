@@ -1,0 +1,58 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $pink;
+    border-radius: 100%;
+    p{
+        @include fs-14;
+        transform: rotate(10deg);
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px 0 20px;
+}
+
+.change-page{
+    display: flex;
+    .arrow{
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        margin: 0 15px;
+        &.arrow-right{
+            border-left: 15px solid $paper;
+        }
+        &.arrow-left{
+            border-right:15px solid $paper; 
+        }
+    }
+}
+
+@media(min-width: 1000px){
+    .circle{
+        width: 125px;
+        height: 125px;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media(min-width: 1050px){
+    .change-page{
+      position: fixed;
+      bottom: 15%;
+      right: 50px;
+    }
+  }

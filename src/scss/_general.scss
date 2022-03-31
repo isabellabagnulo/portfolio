@@ -61,7 +61,7 @@ main{
                 padding: 10px 20px;
                 h4{
                     @include fs-12;
-                    @include fw-semibold;
+                    font-weight: 600;
                     padding-bottom: 5px
                 }
                 p{

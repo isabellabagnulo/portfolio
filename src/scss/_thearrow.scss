@@ -102,19 +102,19 @@ $arrow-head-thickness: $shaft-thickness;
   transition: all 0.2s;
   
   &:hover {
-    color: $paper;
+    color: $white;
     
     > .the-arrow.-left {
       > .shaft {
         width: $newshaft-width;
         transition-delay: 0.1s;
-        background-color: $paper;
+        background-color: $white;
 
         &:before,
         &:after {
           width: $arrow-head-width;
           transition-delay: 0.1s;
-          background-color: $paper;
+          background-color: $white;
         }
 
         &:before {
@@ -177,12 +177,12 @@ $arrow-head-thickness: $shaft-thickness;
     > .shaft {
       &:before,
       &:after {
-        background-color: $paper;
+        background-color: $white;
       }
     }
   }
   .animated-arrow{
-    color: $paper;
+    color: $white;
   }
 }
 

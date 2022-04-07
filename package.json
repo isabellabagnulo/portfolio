@@ -3,20 +3,18 @@
   "scripts": {
     "clean": "rm -rf dist/*",
     "watch": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "build-html": "posthtml -c .posthtmlrc"
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
     "browser-sync-webpack-plugin": "^2.3.0",
     "copy-webpack-plugin": "^10.2.4",
-    "html-loader": "^3.1.0",
-    "posthtml": "^0.16.6",
-    "posthtml-include": "^1.7.2",
-    "posthtml-loader": "^2.0.1",
+    "posthtml-cli": "^0.10.0",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0"
+    "posthtml-include": "^1.7.3"
   }
 }

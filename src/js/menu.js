@@ -1,7 +1,7 @@
 function burgermenu() {
   const burger = document.querySelector(".burger")
   const nav = document.querySelector("nav")
-  const menu = document.querySelector(".menu")
+  const menu = document.querySelector(".nav")
 
   burger.addEventListener("click", (e) => {
     e.preventDefault()

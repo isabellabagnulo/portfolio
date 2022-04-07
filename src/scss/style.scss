@@ -3,11 +3,15 @@
 @import 'mixin';
 @import 'fonts';
 
+@import 'typography';
+@import 'spacing';
+
 @import 'general';
+@import 'home';
+@import 'works';
 @import 'menu';
-// @import 'cards';
-// @import 'buttons';
+@import 'cards';
+@import 'buttons';
 // @import 'footer';
-// @import 'background';
 // @import 'cssClass';
 // @import 'thearrow';

@@ -1,0 +1,22 @@
+body{
+    font-family: 'Clash Display', sans-serif;
+}
+h1{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media(min-width: 1050px){
+    h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}

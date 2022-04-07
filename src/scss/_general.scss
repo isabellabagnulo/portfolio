@@ -1,20 +1,9 @@
 body{
     background: $black;
-    color: $paper;
-    font-family: 'Clash Display', sans-serif;
+    color: $white;
 }
 a{
-    color: $paper;
-}
-
-h1{
-    font-weight: 500;
-    @include fs-20;
-    padding-bottom: 25px;
-}
-
-.about img, .single img{
-    padding-top: 30px;
+    color: $white;
 }
 
 .logo{
@@ -24,199 +13,217 @@ h1{
     z-index: 99;
 }
 
-main{
-    padding: 30px 20px;
-    section{
-        padding: 25px 0;
-    }
-    p{
-        line-height: 150%;
+.home{
+    footer{
+        display: none;
     }
 }
 
-.paragraph-1{
-    padding-bottom: 20px;
-}
-
-.section-inline{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    p{
-        @include fs-35;
-        font-weight: 400;
-    }
-}
-
-.single, .about{
-    .section-inline{
-        justify-content: space-around;
-    }
-    .work-header{
-        .work-info{
-            display: flex;
-            justify-content: space-between;
-            margin: -10px -20px;
-            .single-info{
-                padding: 10px 20px;
-                h4{
-                    @include fs-12;
-                    font-weight: 600;
-                    padding-bottom: 5px
-                }
-                p{
-                    @include fs-18;
-                    line-height: normal;
-                }
-            }
-        }
-    }
-    .work-description{
-        p{
-            padding: 10px 0;
-        }
-    }
-}
-
-.coming-soon{
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .banner{
-        @include fs-50;
-        padding-bottom: 50px;
-    }
-}
-
-.swiper-pagination .swiper-pagination-bullet-active{
-    background: $pink;
-}
-
-// CUSTOMIZED SCROLL BAR
-/* width */
-::-webkit-scrollbar {
-    width: 15px;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: $pink; 
-    border-radius: 10px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: $pink; 
-}
 
 @media(min-width: 700px){
     .logo{
         top: 70px;
         left: 30px;
     }
-
-    main{
-        padding: 70px 30px;
-        section{
-            padding: 30px 170px;
-        }
-    }
-
-    .home{
-        height: 100vh;
-    }
-
-    .coming-soon{
-        height: 94vh;
-    }
-
-    .single{
-        .work-header{
-            .work-info{
-                .single-info{
-                    p{
-                        @include fs-14;
-                    }
-                }
-            }
-        }
-    }
 }
 
-@media(min-width: 1000px){
-    .single{
-        .work-header{
-            display: grid;
-            grid-template-columns: 2fr 5fr;
-            .swiper{
-                min-width: 0;
-                width: 100%;
-                height: auto;
-                .swiper-slide {
-                    width:auto;
-                    height:auto;
-                    img{
-                        width:100%;
-                        height:auto;
-                    }
-                }
-            }
-            .work-info{
-                flex-direction: column;
-                justify-content: flex-start;
-                .single-info{
-                    margin: 10px 0;
-                }
-            }
-            img{
-                padding-top: 0;
-            }
-        }
-    }
-}
 
 @media(min-width: 1050px){
     .logo{
         top: 100px;
         left: 50px;
     }
-
-    main{
-        padding: 100px 50px;
-        section{
-            padding: 50px 250px;
-        }
-    }
-
-    .paragraph-1, .paragraph-2{
-        display: grid;
-    }
-    .paragraph-1{
-        grid-template-columns: 2fr 6fr;
-        h1{
-            padding-right: 100px;
-        }
-    }
-    .paragraph-2{
-        grid-template-columns: 6fr 2fr;
-        p{
-            padding-right: 150px;
-        }
-        img{
-            padding-top: 0;
-        }
-        .image{
-            width: 200px;
-        }
-    }
-
-    .section-inline{
-        p{
-            @include fs-40;
-        }
-    }
-    .coming-soon{
-        height: 90vh;
-    }
 }
+
+// .about img, .single img{
+//     padding-top: 30px;
+// }
+
+// main{
+//     padding: 30px 20px;
+//     section{
+//         padding: 25px 0;
+//     }
+//     p{
+//         line-height: 150%;
+//     }
+// }
+
+// .paragraph-1{
+//     padding-bottom: 20px;
+// }
+
+// .section-inline{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     p{
+//         @include fs-35;
+//         font-weight: 400;
+//     }
+// }
+
+// .single, .about{
+//     .section-inline{
+//         justify-content: space-around;
+//     }
+//     .work-header{
+//         .work-info{
+//             display: flex;
+//             justify-content: space-between;
+//             margin: -10px -20px;
+//             .single-info{
+//                 padding: 10px 20px;
+//                 h4{
+//                     @include fs-12;
+//                     font-weight: 600;
+//                     padding-bottom: 5px
+//                 }
+//                 p{
+//                     @include fs-18;
+//                     line-height: normal;
+//                 }
+//             }
+//         }
+//     }
+//     .work-description{
+//         p{
+//             padding: 10px 0;
+//         }
+//     }
+// }
+
+// .coming-soon{
+//     height: 75vh;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     .banner{
+//         @include fs-50;
+//         padding-bottom: 50px;
+//     }
+// }
+
+// .swiper-pagination .swiper-pagination-bullet-active{
+//     background: $pink;
+// }
+
+// // CUSTOMIZED SCROLL BAR
+// /* width */
+// ::-webkit-scrollbar {
+//     width: 15px;
+// }
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//     background: $pink; 
+//     border-radius: 10px;
+// }
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//     background: $pink; 
+// }
+
+// @media(min-width: 700px){
+
+//     main{
+//         padding: 70px 30px;
+//         section{
+//             padding: 30px 170px;
+//         }
+//     }
+
+//     .home{
+//         height: 100vh;
+//     }
+
+//     .coming-soon{
+//         height: 94vh;
+//     }
+
+//     .single{
+//         .work-header{
+//             .work-info{
+//                 .single-info{
+//                     p{
+//                         @include fs-14;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media(min-width: 1000px){
+//     .single{
+//         .work-header{
+//             display: grid;
+//             grid-template-columns: 2fr 5fr;
+//             .swiper{
+//                 min-width: 0;
+//                 width: 100%;
+//                 height: auto;
+//                 .swiper-slide {
+//                     width:auto;
+//                     height:auto;
+//                     img{
+//                         width:100%;
+//                         height:auto;
+//                     }
+//                 }
+//             }
+//             .work-info{
+//                 flex-direction: column;
+//                 justify-content: flex-start;
+//                 .single-info{
+//                     margin: 10px 0;
+//                 }
+//             }
+//             img{
+//                 padding-top: 0;
+//             }
+//         }
+//     }
+// }
+
+// @media(min-width: 1050px){
+
+//     main{
+//         padding: 100px 50px;
+//         section{
+//             padding: 50px 250px;
+//         }
+//     }
+
+//     .paragraph-1, .paragraph-2{
+//         display: grid;
+//     }
+//     .paragraph-1{
+//         grid-template-columns: 2fr 6fr;
+//         h1{
+//             padding-right: 100px;
+//         }
+//     }
+//     .paragraph-2{
+//         grid-template-columns: 6fr 2fr;
+//         p{
+//             padding-right: 150px;
+//         }
+//         img{
+//             padding-top: 0;
+//         }
+//         .image{
+//             width: 200px;
+//         }
+//     }
+
+//     .section-inline{
+//         p{
+//             @include fs-40;
+//         }
+//     }
+//     .coming-soon{
+//         height: 90vh;
+//     }
+// }
 

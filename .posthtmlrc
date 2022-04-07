@@ -1,5 +1,14 @@
 {
-    "plugins": {
-        "posthtml-include": {}
+  "root": "src",
+  "input": "*.html",
+  "output": "dist",
+  "options": {
+    "sync": true
+  },
+  "plugins": {
+    "posthtml-include": {
+        "root": "src",
+        "encoding": "utf8"
     }
+  }
 }

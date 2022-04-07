@@ -1,0 +1,25 @@
+.home{
+    main{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .intro-block{
+            height: 100vh;
+            width: 100%;
+            &.intro-block-works{
+                background: $black;
+            }
+            &.intro-block-about{
+                background: $white2;
+            }
+        }
+        .maneki-neko{
+            margin: auto;
+            position: absolute;
+            top: 0; 
+            left: 0; 
+            bottom: 0; 
+            right: 0;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .education{
-    border-left: 0.5px solid $white;
+    border-left: 0.5px solid $black;
     .ed-card{
         padding: 25px;
         position: relative;
@@ -19,8 +19,8 @@
             left: -6.5px;
             width: 10px;
             height: 10px;
-            border: 1px solid $white;
-            background: $black;
+            border: 1px solid $black;
+            background: $white2;
             border-radius: 100%;
         }
     }
@@ -43,71 +43,6 @@
     .skill{
         background: $white;
         margin: 5px 0 10px 0;
-        .fill{
-            background: $pink;
-            display: flex;
-            align-items: center;
-        }
-        .fill-5{
-            width: 5%;
-        }
-        .fill-10{
-            width: 10%;
-        }
-        .fill-15{
-            width: 15%;
-        }
-        .fill-20{
-            width: 20%;
-        }
-        .fill-25{
-            width: 25%;
-        }
-        .fill-30{
-            width: 30%;
-        }
-        .fill-35{
-            width: 35%;
-        }
-        .fill-40{
-            width: 40%;
-        }
-        .fill-45{
-            width: 45%;
-        }
-        .fill-50{
-            width: 50%;
-        }
-        .fill-55{
-            width: 55%;
-        }
-        .fill-60{
-            width: 60%;
-        }
-        .fill-65{
-            width: 65%;
-        }
-        .fill-70{
-            width: 70%;
-        }
-        .fill-75{
-            width: 75%;
-        }
-        .fill-80{
-            width: 80%;
-        }
-        .fill-85{
-            width: 85%;
-        }
-        .fill-90{
-            width: 90%;
-        }
-        .fill-95{
-            width: 95%;
-        }
-        .fill-100{
-            width: 100%;
-        }
     }
 }
 
@@ -116,7 +51,7 @@
 @media(min-width: 1050px){
     .education{
         text-align: center;
-        border-top: 0.5px solid $white;
+        border-top: 0.5px solid $black;
         border-left: none;
         display: grid;
         grid-template-columns: repeat(3, 1fr);

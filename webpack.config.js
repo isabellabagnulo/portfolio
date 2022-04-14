@@ -21,4 +21,12 @@ module.exports = {
       ],
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /swiper\.esm\.js/,
+        sideEffects: false,
+      }, //tree shaking
+    ], // rules
+  }, // module
 }

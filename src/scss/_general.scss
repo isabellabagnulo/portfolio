@@ -37,6 +37,14 @@ a{
     .paragraph-1{
         padding-bottom: 20px;
     }
+    .paragraph-2{
+        a{
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
 }
 
 .section-inline{
@@ -203,13 +211,3 @@ a{
 //         }
 //     }
 // }
-
-// @media(min-width: 1050px){
-
-
-
-//     .coming-soon{
-//         height: 90vh;
-//     }
-// }
-

@@ -8,7 +8,8 @@
     <meta name="keywords" content="portfolio, web design">
     <meta name="author" content="Isabella Bagnulo">
     <title>Isabella Bagnulo's Portfolio - About</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="about">
@@ -27,7 +28,6 @@
                 <ul class="nav__list">
                     <li class="nav__list-item"><a href="about.html">ABOUT</a></li>
                     <li class="nav__list-item"><a href="works.html">WORKS</a></li>
-                    <li class="nav__list-item"><a href="contact.html">CONTACT</a></li>
                 </ul>
                 <!-- <ul class="menu-social">
                     <li><a target="blank" href="https://www.linkedin.com/in/isabella-bagnulo-492698199/"><span class="fab fa-linkedin-in"></span></a></li>
@@ -37,6 +37,8 @@
             </div>
         </div>
     </nav>
+    <audio id="link" src="http://ivang-design.com/svg-load/menu/link.mp3" preload="auto"></audio>
+    <audio id="hover-audio" src="http://ivang-design.com/svg-load/menu/hover.mp3" preload="auto"></audio>
 </header>
 
     <main>
@@ -48,7 +50,11 @@
             </div>
 
             <div class="paragraph-2">
-                <p>I concluded my studies in Communication, Innovation and Multimedia at the University of Pavia, thanks to which I approached the web design world. My thesis work on Internet of Things and Smart Cities allowed me to study and understand the potential of new technologies and new media. I decided to continue my studies in this area, at the Mohole school in Milan, where I am currently enrolled in the Web & Digital Media course. The realization of several websites for didactic purposes allowed me to discover the passion for the development of Wordpress themes and the proneness for Front-end side development.</p>
+                <p>I concluded my studies in Communication, Innovation and Multimedia at the University of Pavia, thanks to which I approached the web design world. My thesis work on Internet of Things and Smart Cities allowed me to study and understand the potential of new technologies and new media. I decided to continue my studies in this area, at the Mohole school in Milan, where I am currently enrolled in the Web & Digital Media course. The realization of several websites for didactic purposes allowed me to discover the passion for the development of Wordpress themes and the proneness for Front-end side development.
+                    <br>
+                    <br>
+                    <a target="blank" href="https://drive.google.com/file/d/1h64d_qg3aTsGMVXy0nMzvRsZ30zjKjHW/view?usp=sharing">Get my CV</a>
+                </p>
                 <!-- <p>Ho completato il corso di studi in Comunicazione, Innovazione e Multimedialità all'Università degli Studi di Pavia, grazie alla quale ho potuto avvicinarmi al mondo del web design. Il mio lavoro di tesi sullo studio dell'Internet of Things e delle Smart Cities, mi ha permesso di studiare e comprendere le potenzialità delle nuove tecnologie e dei nuovi mezzi di comunicazione. Ho quindi deciso di continuare il mio percorso di studi in questo ambito alla scuola Mohole di Milano, dove sto attualmente frequentando il corso di <span class="semibold">Web & Digital Media</span>. La realizzazione di diversi siti a scopo didattico mi ha permesso di scoprire la passione per lo sviluppo di <span class="semibold">temi Wordpress</span> e la propensione per lo <span class="semibold">sviluppo lato Front-end</span>.</p> -->
                 <div class="image"><img src="static/img/isabellabagnulo.webp" alt="isabella bagnulo"></div>
             </div>
@@ -82,18 +88,71 @@
         <section>
             <h1>SKILLS</h1>
             <div class="skills-container">
-                
+                <div class="single-skill">
+                    <img src="static/img/skills/html.svg" alt="html">
+                    <p class="skill-name">HTML</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/css.svg" alt="css">
+                    <p class="skill-name">CSS</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/sass.svg" alt="sass">
+                    <p class="skill-name">Sass</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/javascript.svg" alt="javascript">
+                    <p class="skill-name">Javascript</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/php.svg" alt="php">
+                    <p class="skill-name">PHP</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/wordpress.svg" alt="wordpress">
+                    <p class="skill-name">Wordpress</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/git.svg" alt="git">
+                    <p class="skill-name">Git</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/ux-ui.svg" alt="ux ui design">
+                    <p class="skill-name">UX / UI Design</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>SOFTWARE</h1>
+            <div class="skills-container">
+                <div class="single-skill">
+                    <img src="static/img/skills/illustrator.svg" alt="illustrator">
+                    <p class="skill-name">Illustrator</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/photoshop.svg" alt="photoshop">
+                    <p class="skill-name">Photoshop</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/inDesign.svg" alt="inDesign">
+                    <p class="skill-name">InDesign</p>
+                </div>
+                <div class="single-skill">
+                    <img src="static/img/skills/figma.svg" alt="figma">
+                    <p class="skill-name">Figma</p>
+                </div>
             </div>
         </section>
 
         <section class="section-inline">
             <div>
-                <p>Download</p>
-                <p class="p-40">my resume</p>
+                <p>Let's work</p>
+                <p class="p-40">together</p>
             </div>
 
             <div class="circle">
-                <a href="https://drive.google.com/file/d/1h64d_qg3aTsGMVXy0nMzvRsZ30zjKjHW/view?usp=sharing"><p>GET THE<br>CV</p></a>
+                <a href="mailto:isa.bagnulo@gmail.com"><p>CONTACT<br>ME</p></a>
             </div>
         </section>
 
@@ -106,6 +165,29 @@
     <p>Made by Isabella Bagnulo</p>
 
 </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const carousel = new Swiper(".swiper", {
+        direction: "horizontal",
+        slidesPerView: 1,
+        calculateHeight: true,
+
+        pagination: {
+        clickable: true,
+        dynamicBullets: true,
+        el: ".swiper-pagination",
+        },
+        autoplay: {
+        delay: 3000,
+        pauseOnMouseEnter: true,
+        },
+        effect: "fade",
+        fadeEffect: {
+        crossFade: true,
+        },
+    })
+</script>
 
     <script type="module" src="js/main.js"></script>
 

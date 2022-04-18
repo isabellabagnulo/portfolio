@@ -2,12 +2,8 @@ header{
     height: 120px;
     z-index: 99;
     background: $black;
-    position: fixed;
+    position: absolute;
     top: 0;
-}
-
-.homepage header{
-    background: transparent;
 }
 
 .burger{
@@ -68,7 +64,7 @@ header{
     }
 }
 
-.home, .about{
+.about{
     .burger{
         color: $black;
         transition: color 400ms ease-in;
@@ -171,7 +167,7 @@ header{
                 a{ 
                     position: relative;
                     text-decoration: none;
-                    color: rgba(218,210,200,0.8);
+                    color: rgba(218,210,200,1);
                     overflow: hidden; 
                     cursor: pointer;
                     padding-left: 5px;
@@ -182,29 +178,6 @@ header{
                     text-transform: uppercase;
                     -webkit-transition: all 200ms linear;
                     transition: all 200ms linear;
-                    // &:after{ 
-                    //     position: absolute;
-                    //     content: '';
-                    //     top: 50%;
-                    //     margin-top: -2px;
-                    //     left: 50%;
-                    //     width: 0;
-                    //     height: 0;
-                    //     opacity: 0;
-                    //     background-color: #8167a9;
-                    //     z-index: 1;
-                    //     -webkit-transition: all 200ms linear;
-                    //     transition: all 200ms linear; 
-                    // }
-                    // &:hover:after{ 
-                    //     height: 4px;
-                    //     opacity: 1;
-                    //     left: 0;
-                    //     width: 100%;
-                    // }
-                    &:hover{
-                        color: rgba(218,210,200,1);
-                    }
                 }
             }
         }
@@ -288,16 +261,6 @@ header{
     }
 }
 
-
-// .menu-social{
-//     display: flex;
-//     a{
-//         color: $pink;
-//         padding: 10px;
-//         @include fs-20;
-//     }
-// }
-
 @media(min-width: 700px){
 
     header{
@@ -366,6 +329,20 @@ header{
             }
             &::before {
                 transform: translateY(-.65em) scaleX(.55);
+            }
+        }
+    }
+    .nav{
+        .nav__content{
+            .nav__list{
+                .nav__list-item{
+                    a{
+                        color: rgba(218,210,200,0.8);
+                        &:hover{
+                            color: rgba(218,210,200,1);
+                        }
+                    }
+                }
             }
         }
     }

@@ -10,6 +10,7 @@
     "@barba/core": "^2.9.7",
     "browser-sync-webpack-plugin": "^2.3.0",
     "copy-webpack-plugin": "^10.2.4",
+    "gsap": "^3.10.3",
     "posthtml-cli": "^0.10.0",
     "swiper": "^8.1.0",
     "webpack": "^5.70.0",

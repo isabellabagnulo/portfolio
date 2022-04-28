@@ -18,30 +18,14 @@
     }
 
     .label-drag{
-        display: none;
-        .drag-text{
-            text-align: center;
-            padding-left: 20px;
-            p{
-                &.color-black{
-                    color: $black;
-                }
-            }
-        }
-    }
-}
-
-@media(min-width: 1050px){
-    .home{
-        .label-drag{
-            display: block;
-            margin: auto;
+        display: block;
+        margin: auto;
         position: absolute;
-        right: 50px;
+        right: 20px;
         top: 0;
         bottom: 0;
         display: flex;
-        align-items: center;
+        align-items: center;      
         .arrows{
             display: flex;
             flex-direction: column;
@@ -59,6 +43,26 @@
                 }
             }
         }
+        .drag-text{
+            display: none;
+            text-align: center;
+            padding-left: 20px;
+            p{
+                &.color-black{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1050px){
+    .home{
+        .label-drag{
+            right: 50px;
+            .drag-text{
+                display: block;
+            }
         }
     }
 }

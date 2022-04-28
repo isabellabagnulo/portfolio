@@ -414,7 +414,7 @@ Draggable.create(cat, {
       delay: 0.15,
     })
 
-    // cat.style.transition = "ease 300ms all"
-    // cat.style.transform = "translate3d(0px, 0px, 0px)"
+    cat.style.transition = "ease 300ms all"
+    cat.style.transform = "translate3d(0px, 0px, 0px)"
   },
 })

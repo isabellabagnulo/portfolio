@@ -16,6 +16,7 @@ body.home{
             height: 50%;
             display: flex;
             justify-content: center;
+            position: absolute;
             .link-home{
                 font-size: 2rem;
                 font-weight: 600;
@@ -26,7 +27,7 @@ body.home{
                 align-items: flex-start;
                 top: 0;
                 .link-home{
-                    padding-top: 50px;
+                    padding-top: 100px;
                 }
             }
             &.intro-block-about{
@@ -35,7 +36,7 @@ body.home{
                 align-items: flex-end;
                 bottom: 0;
                 .link-home{
-                    padding-bottom: 50px;
+                    padding-bottom: 100px;
                 }
             }
         }
@@ -43,7 +44,7 @@ body.home{
 }
 
 .btn-cat{
-    width: 50%;
+    width: 80%;
     height: auto;
     display: block;
     margin: auto;
@@ -59,5 +60,34 @@ body.home{
         left: 0; 
         bottom: 0; 
         right: 0;
+        width: 70vw;
+        height: auto;
+    }
+}
+
+@media(min-width: 1050px){
+    #content{
+        .intro--wrapper{
+            .intro-block{
+                &.intro-block-works{
+                    .link-home{
+                        padding-top: 50px;
+                    }
+                }
+                &.intro-block-about{
+                    .link-home{
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-cat{
+        width: 50%;
+        svg{
+            width: 30vw;
+            height: auto;
+        }
     }
 }

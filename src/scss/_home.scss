@@ -18,8 +18,24 @@
     }
 
     .label-drag{
-        display: block;
-        margin: auto;
+        display: none;
+        .drag-text{
+            text-align: center;
+            padding-left: 20px;
+            p{
+                &.color-black{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1050px){
+    .home{
+        .label-drag{
+            display: block;
+            margin: auto;
         position: absolute;
         right: 50px;
         top: 0;
@@ -43,18 +59,9 @@
                 }
             }
         }
-        .drag-text{
-            text-align: center;
-            padding-left: 20px;
-            p{
-                &.color-black{
-                    color: $black;
-                }
-            }
         }
     }
 }
-
 // @media(min-width: 1000px){
 //     .home{
 //         main{

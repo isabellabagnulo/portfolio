@@ -330,6 +330,9 @@ Draggable.create(cat, {
     }
 
     // cat
+    gsap.to(cat, {
+      transform: "translate3d(0px, 0px, 0px)",
+    })
     // gsap.to(cat, {
     //   duration: 0.5,
     //   // top: `calc(100%-${catHeight / 2})`,
